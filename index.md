@@ -1,20 +1,23 @@
-<html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Umer Farooq Bhat - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollreveal/4.0.0/scrollreveal.min.js"></script>
 </head>
 <body>
+
     <!-- Header Section -->
     <header>
         <div class="container">
             <h1>Umer Farooq Bhat</h1>
-            <nav>
+            <nav class="nav-bar">
                 <ul>
-                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
@@ -27,10 +30,10 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="container">
+        <div class="hero-content">
             <img src="Images/Photograph.jpeg" alt="Profile Picture" class="profile-pic">
-            <h1>Welcome to My Professional Portfolio</h1>
-            <p>Full-stack developer with expertise in .NET, MVC, Angular, and SQL.</p>
+            <h2>Welcome to My Professional Portfolio</h2>
+            <p>I am a Full-stack developer passionate about technology and problem-solving.</p>
             <a href="#contact" class="btn-primary">Get in Touch</a>
         </div>
     </section>
@@ -40,7 +43,7 @@
         <div class="container">
             <h2>About Me</h2>
             <p>
-                I am a dedicated software developer with over 3 years of experience in MVC.NET, WebApi, Angular, SQL Server, and SSIS. My work spans complex regulatory reporting systems, database optimization, and full-stack solutions.
+                I am a passionate software developer with over 3 years of experience in web development, MVC.NET, Angular, SQL Server, and SSIS. I thrive on creating efficient, user-friendly solutions that enhance performance, reliability, and user experience.
             </p>
         </div>
     </section>
@@ -53,21 +56,18 @@
                 <h3>Software Engineer</h3>
                 <h4>Société Générale (June 2022 - Present)</h4>
                 <ul>
-                    <li>Developed a regulatory reporting application (FATCOM) using C#, .NET, MVC, and SQL Server.</li>
-                    <li>Optimized SQL Server databases to improve query performance and ensure data integrity.</li>
-                    <li>Enhanced system performance with efficient business logic and architectural improvements.</li>
-                    <li>Implemented Windows Services to automate background data processing tasks.</li>
-                    <li>Ensured global regulatory compliance through robust application components.</li>
+                    <li>Designed and developed a regulatory reporting application (FATCOM) using C#, .NET, MVC, and SQL Server.</li>
+                    <li>Improved SQL query performance and optimized large datasets for regulatory compliance.</li>
+                    <li>Implemented background services and Windows Services to automate data processing tasks.</li>
                 </ul>
             </div>
             <div class="job">
                 <h3>Software Analyst</h3>
                 <h4>Imarticus Learning (Feb 2022 - June 2022)</h4>
                 <ul>
-                    <li>Implemented MVC.NET Framework for scalable, maintainable web applications.</li>
-                    <li>Designed responsive user interfaces using Angular, enhancing user satisfaction.</li>
-                    <li>Optimized SQL Server data retrieval, reducing response times.</li>
-                    <li>Ensured secure backend data processing using C#, MVC.NET, and WPF.</li>
+                    <li>Developed scalable, secure web applications using MVC.NET and Angular.</li>
+                    <li>Enhanced user interfaces for better responsiveness and performance.</li>
+                    <li>Optimized backend performance using SQL Server queries and C# programming.</li>
                 </ul>
             </div>
         </div>
@@ -77,13 +77,28 @@
     <section id="skills" class="skills">
         <div class="container">
             <h2>Technical Skills</h2>
-            <ul>
-                <li><i class="fas fa-code"></i> C#, ASP.NET MVC, WebApi</li>
-                <li><i class="fas fa-database"></i> SQL Server, SSIS, MySQL</li>
-                <li><i class="fas fa-chart-line"></i> Angular (6+), TypeScript</li>
-                <li><i class="fas fa-tools"></i> Visual Studio, Jenkins, Git</li>
-                <li><i class="fas fa-laptop-code"></i> Python, Node.js</li>
-            </ul>
+            <div class="skills-list">
+                <div class="skill">
+                    <i class="fas fa-code"></i>
+                    <h4>Web Development</h4>
+                    <p>C#, ASP.NET MVC, WebApi, Angular, TypeScript</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-database"></i>
+                    <h4>Database</h4>
+                    <p>SQL Server, SSIS, MySQL</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-tools"></i>
+                    <h4>Tools & Technologies</h4>
+                    <p>Visual Studio, Jenkins, Git, Docker</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-laptop-code"></i>
+                    <h4>Programming Languages</h4>
+                    <p>Python, Node.js, JavaScript</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -92,12 +107,12 @@
         <div class="container">
             <h2>Projects</h2>
             <div class="project-card">
-                <h3>FATCOM Regulatory Reporting Application</h3>
-                <p>Developed a tool for automating compliance reporting, improving report generation times and efficiency.</p>
+                <h3>FATCOM Regulatory Reporting</h3>
+                <p>Automated financial compliance reporting system, reducing report generation time.</p>
             </div>
             <div class="project-card">
-                <h3>MIFID II Regulatory Reporting Application</h3>
-                <p>Designed and developed a platform to ensure compliance with European financial regulations.</p>
+                <h3>MIFID II Reporting Tool</h3>
+                <p>Developed a platform to ensure compliance with European financial regulations.</p>
             </div>
         </div>
     </section>
@@ -148,5 +163,8 @@
         </div>
     </footer>
 
+    <script>
+        ScrollReveal().reveal('.fade-in', { delay: 200, distance: '50px', origin: 'bottom' });
+    </script>
 </body>
 </html>
