@@ -2,6 +2,5 @@ remote_theme: pages-themes/hacker@v0.2.0
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
 
-title: "Umer Farooq Bhat's Portfolio"
-description: "Full Stack Developer specializing in .NET, Angular, and SQL with 3 years of experience."
+
 
