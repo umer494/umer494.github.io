@@ -105,13 +105,13 @@ _Software Analyst_ (Feb 2022 – June 2022)
 <p>Email: [umerbhat283@gmail.com](mailto:umerbhat283@gmail.com)</p>
 <p>LinkedIn: [linkedin.com/in/bhat-umer-farooq](https://linkedin.com/in/bhat-umer-farooq)</p>
 
-<iframe src="https://www.google.com/maps/embed?pb=globalsolutioncenter.societegenerale.in/en/" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+<iframe src="https://www.google.com/maps/place/Societe+Generale+Global+Solution+Center/@12.9822748,77.7350414,17z/data=!3m2!4b1!5s0x3bae11fb09d2ccbb:0xab0202f98780fca7!4m6!3m5!1s0x3bae0df955555555:0x44f047ba18cc2e67!8m2!3d12.9822748!4d77.7376163!16s%2Fg%2F1tdwcckb?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
 ### Interactive Project Gallery
 
 <div class="project-gallery">
   <div class="card">
-    <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="FATCOM Project">
+    <img src="https://th.bing.com/th/id/OIP.EIy2mmEmIZ0L7Qs6SO4rJgHaEP?w=306&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="card-img-top" alt="FATCOM Project">
     <div class="card-body">
       <h5 class="card-title">FATCOM (Regulatory Reporting Application)</h5>
       <p class="card-text">Automated the compliance reporting process for financial institutions using .NET and SQL.</p>
@@ -120,7 +120,7 @@ _Software Analyst_ (Feb 2022 – June 2022)
   </div>
 
   <div class="card">
-    <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="MIFID II Project">
+    <img src="https://th.bing.com/th/id/OIP.jrveRqbIorZKEZiwGGQ-LAHaEG?w=321&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="card-img-top" alt="MIFID II Project">
     <div class="card-body">
       <h5 class="card-title">MIFID II Regulatory Reporting Application</h5>
       <p class="card-text">Developed a platform supporting MIFID II regulatory reporting using MVC.NET and Angular.</p>
@@ -143,7 +143,7 @@ _Software Analyst_ (Feb 2022 – June 2022)
 
 <style>
 .hero {
-  background: url('https://via.placeholder.com/1920x800') no-repeat center center fixed;
+  background: url('C:\Users\Admin\Downloads\Portfolo2024\umer494.github.io\Images\Photograph.jpeg') no-repeat center center fixed;
   background-size: cover;
   text-align: center;
   color: white;
