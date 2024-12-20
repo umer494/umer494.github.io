@@ -28,7 +28,7 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <img src="Photograph.jpeg" alt="Profile Picture" class="profile-pic">
+            <img src="Images/Photograph.jpeg" alt="Profile Picture" class="profile-pic">
             <h1>Welcome to My Professional Portfolio</h1>
             <p>Full-stack developer with expertise in .NET, MVC, Angular, and SQL.</p>
             <a href="#contact" class="btn-primary">Get in Touch</a>
@@ -40,7 +40,7 @@
         <div class="container">
             <h2>About Me</h2>
             <p>
-                I am a dedicated software developer with around 3 years of experience in MVC.NET, WebApi, Angular, SQL Server, and SSIS. 
+                I am a dedicated software developer with around 3 years of experience in MVC.NET, WebApi, Angular, SQL Server, and SSIS.
                 My work spans complex regulatory reporting systems, database optimization, and full-stack solutions.
             </p>
         </div>
@@ -108,10 +108,10 @@
         <div class="container">
             <h2>Gallery</h2>
             <div class="gallery-grid">
-                <img src="WhatsApp Image 2024-12-20 at 22.10.25_0a38740f.jpg" alt="CSR Event">
-                <img src="WhatsApp Image 2024-12-20 at 22.10.26_e46c143e.jpg" alt="Team Lunch">
-                <img src="WhatsApp Image 2024-12-20 at 22.10.27_9d35a0fa.jpg" alt="Outing">
-                <img src="WhatsApp Image 2024-12-20 at 22.10.28_80a4b926.jpg" alt="Fresher's Welcome">
+                <img src="Images/WhatsApp Image 2024-12-20 at 22.10.25_0a38740f.jpg" alt="CSR Event">
+                <img src="Images/WhatsApp Image 2024-12-20 at 22.10.26_e46c143e.jpg" alt="Team Lunch">
+                <img src="Images/WhatsApp Image 2024-12-20 at 22.10.27_9d35a0fa.jpg" alt="Outing">
+                <img src="ImagesWhatsApp Image 2024-12-20 at 22.10.28_80a4b926.jpg" alt="Fresher's Welcome">
             </div>
         </div>
     </section>
@@ -147,5 +147,6 @@
             <p>&copy; 2024 Umer Farooq Bhat. All rights reserved.</p>
         </div>
     </footer>
+
 </body>
 </html>
