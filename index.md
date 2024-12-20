@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -40,8 +40,7 @@
         <div class="container">
             <h2>About Me</h2>
             <p>
-                I am a dedicated software developer with around 3 years of experience in MVC.NET, WebApi, Angular, SQL Server, and SSIS.
-                My work spans complex regulatory reporting systems, database optimization, and full-stack solutions.
+                I am a dedicated software developer with over 3 years of experience in MVC.NET, WebApi, Angular, SQL Server, and SSIS. My work spans complex regulatory reporting systems, database optimization, and full-stack solutions.
             </p>
         </div>
     </section>
@@ -111,7 +110,7 @@
                 <img src="Images/WhatsApp Image 2024-12-20 at 22.10.25_0a38740f.jpg" alt="CSR Event">
                 <img src="Images/WhatsApp Image 2024-12-20 at 22.10.26_e46c143e.jpg" alt="Team Lunch">
                 <img src="Images/WhatsApp Image 2024-12-20 at 22.10.27_9d35a0fa.jpg" alt="Outing">
-                <img src="ImagesWhatsApp Image 2024-12-20 at 22.10.28_80a4b926.jpg" alt="Fresher's Welcome">
+                <img src="Images/WhatsApp Image 2024-12-20 at 22.10.28_80a4b926.jpg" alt="Fresher's Welcome">
             </div>
         </div>
     </section>
@@ -134,10 +133,11 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2>Contact Me</h2>
-            <p>Email: <a href="mailto:umerbhat283@gmail.com">umerbhat283@gmail.com</a></p>
-            <p>GitHub: <a href="https://github.com/umer494" target="_blank">github.com/umer494</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/bhat-umer-farooq" target="_blank">linkedin.com/in/bhat-umer-farooq</a></p>
-            <p>Instagram: <a href="https://www.instagram.com/bhat_umer_farooq" target="_blank">instagram.com/bhat_umer_farooq</a></p>
+            <p>Email: <a href="mailto:umerbhat283@gmail.com"><i class="fas fa-envelope"></i> umerbhat283@gmail.com</a></p>
+            <p>Phone: <a href="tel:+11234567890"><i class="fas fa-phone"></i> +1 (123) 456-7890</a></p>
+            <p>GitHub: <a href="https://github.com/umer494" target="_blank"><i class="fab fa-github"></i> github.com/umer494</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/bhat-umer-farooq" target="_blank"><i class="fab fa-linkedin"></i> linkedin.com/in/bhat-umer-farooq</a></p>
+            <p>Instagram: <a href="https://www.instagram.com/bhat_umer_farooq" target="_blank"><i class="fab fa-instagram"></i> instagram.com/bhat_umer_farooq</a></p>
         </div>
     </section>
 
