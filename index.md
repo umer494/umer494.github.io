@@ -1,11 +1,9 @@
-<!DOCTYPE html>
+<html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Umer Farooq Bhat, a Full Stack Developer with expertise in MVC.NET, Angular, and SQL">
-    <meta name="author" content="Umer Farooq Bhat">
-    <title>Umer Farooq Bhat - Full Stack Developer</title>
+  
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -175,11 +173,6 @@
 
 </head>
 <body>
-
-<header>
-    <h1>Umer Farooq Bhat</h1>
-    <p>Full Stack Developer</p>
-</header>
 
 <section>
     <h2>About Me</h2>
