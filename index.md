@@ -105,14 +105,7 @@ _Software Analyst_ (Feb 2022 – June 2022)
 <p>Email: [umerbhat283@gmail.com](mailto:umerbhat283@gmail.com)</p>
 <p>LinkedIn: [linkedin.com/in/bhat-umer-farooq](https://linkedin.com/in/bhat-umer-farooq)</p>
 
-<iframe 
-  src="https://www.google.co.in/maps/embed?pb=!1m18!1m12!1m3!1d3770.993046379835!2d77.7350414!3d12.9822748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae11fb09d2ccbb%3A0xab0202f98780fca7!2sSociete%20Generale%20Global%20Solution%20Center!5e0!3m2!1sen!2sin!4v1672185123430!5m2!1sen!2sin"
-  width="100%" 
-  height="400" 
-  style="border:0;" 
-  allowfullscreen="" 
-  loading="lazy">
-</iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.837006902847!2d77.7376163!3d12.982274799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae0df955555555%3A0x44f047ba18cc2e67!2sSociete%20Generale%20Global%20Solution%20Center!5e0!3m2!1sen!2sin!4v1734705681787!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 ### Interactive Project Gallery
 
