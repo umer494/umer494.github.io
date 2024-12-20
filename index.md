@@ -3,7 +3,7 @@ layout: default
 title: Umer Farooq Bhat - Full Stack Developer
 author: Umer Farooq Bhat
 ---
-  
+
 <header class="hero">
   <h1>Umer Farooq Bhat</h1>
   <p>Full Stack Developer</p>
@@ -21,26 +21,28 @@ Full-stack developer with around 3 years of experience in MVC.NET, WebApi, Angul
 
 ## Skills
 
-- **Languages & Technologies**: 
+- **Languages & Technologies**:
   <i class="fa fa-cogs"></i> C#, Angular, .NET Framework, WebApi, Typescript, ASP.NET MVC, Entity Framework, Python, Jquery
-- **Frameworks & Libraries**: 
+- **Frameworks & Libraries**:
   <i class="fa fa-cogs"></i> .NET Framework, MVC, EntityFramework, Node.js
-- **Database & SQL**: 
+- **Database & SQL**:
   <i class="fa fa-database"></i> SQL Server, MySQL, SSIS
-- **Tools & Platforms**: 
+- **Tools & Platforms**:
   <i class="fa fa-tools"></i> Visual Studio, Git, Jenkins, SonarQube, IIS, Postman
 
 ## Work Experience
 
 ### Société Générale Global Solutions Centre Pvt. Ltd.
-*Software Engineer* (June 2022 – Present)
+
+_Software Engineer_ (June 2022 – Present)
 
 - Designed and developed a regulatory reporting application (FATCOM) using C#, .NET, MVC, and SQL Server.
 - Optimized SQL databases for performance and ensured data integrity.
 - Developed Windows services to automate data processing tasks.
 
 ### Imarticus Learning Private Limited
-*Software Analyst* (Feb 2022 – June 2022)
+
+_Software Analyst_ (Feb 2022 – June 2022)
 
 - Developed MVC.NET-based web applications.
 - Optimized SQL data retrieval and designed responsive UIs with Angular.
@@ -58,9 +60,11 @@ Full-stack developer with around 3 years of experience in MVC.NET, WebApi, Angul
 ## Projects
 
 ### FATCOM (Regulatory Reporting Application)
+
 - Automated the compliance reporting process for financial institutions using .NET and SQL.
 
 ### MIFID II Regulatory Reporting Application
+
 - Developed a platform supporting MIFID II regulatory reporting using MVC.NET and Angular.
 
 ## Contact
@@ -120,7 +124,7 @@ Full-stack developer with around 3 years of experience in MVC.NET, WebApi, Angul
 
 <style>
 .hero {
-  background: url('your-background-image.jpg') no-repeat center center fixed;
+  background: url('images/Photograph.jpeg') no-repeat center center fixed;
   background-size: cover;
   text-align: center;
   color: white;
