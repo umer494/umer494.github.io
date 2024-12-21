@@ -375,16 +375,6 @@
 
  <!-- Contact Section -->
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Email: <a href="mailto:umerbhat283@gmail.com"><i class="fas fa-envelope"></i> umerbhat283@gmail.com</a></p>
-            <p>Phone: <a href="tel:+11234567890"><i class="fas fa-phone"></i> +1 (123) 456-7890</a></p>
-            <p>GitHub: <a href="https://github.com/umer494" target="_blank"><i class="fab fa-github"></i> github.com/umer494</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/bhat-umer-farooq" target="_blank"><i class="fab fa-linkedin"></i> linkedin.com/in/bhat-umer-farooq</a></p>
-            <p>Instagram: <a href="https://www.instagram.com/bhat_umer_farooq" target="_blank"><i class="fab fa-instagram"></i> instagram.com/bhat_umer_farooq</a></p>
-        </div>
-    </section>
 
     <!-- Footer Section -->
 
