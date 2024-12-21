@@ -1,44 +1,53 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Umer Farooq Bhat - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <style>
         /* Global styles */
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             color: #333;
-            background-color: #f4f4f4;
+            background-color: #f7fafc;
+            scroll-behavior: smooth;
         }
 
         h1, h2, h3 {
             margin: 0;
             font-weight: 700;
-            color: #333;
         }
 
         header {
             background: #1E293B;
-            padding: 20px 40px;
+            padding: 40px;
             color: white;
+            text-align: center;
         }
 
         .navbar {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: 700;
         }
 
         .nav-links {
             display: flex;
-            gap: 20px;
+            gap: 30px;
             list-style-type: none;
         }
 
@@ -49,7 +58,12 @@
         .nav-links a {
             color: white;
             text-decoration: none;
-            font-size: 1.1rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ff5722;
         }
 
         .hamburger {
@@ -58,18 +72,26 @@
         }
 
         .hero {
-            background: #e7f1f9;
-            padding: 80px 20px;
+            background: linear-gradient(145deg, #1E293B, #4A6D7C);
+            padding: 100px 20px;
             text-align: center;
+            color: white;
+            margin-bottom: 50px;
         }
 
         .hero h1 {
             font-size: 3.5rem;
+            font-weight: 900;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin: 20px 0;
         }
 
         .profile-container {
             text-align: center;
-            margin-top: -60px;
+            margin-top: -50px;
         }
 
         .profile-container img {
@@ -95,28 +117,51 @@
 
         .skill, .project-card {
             background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
             width: 100%;
             max-width: 250px;
             text-align: center;
-            transition: transform 0.3s ease-in-out;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
         }
 
         .skill:hover, .project-card:hover {
             transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
         }
 
-        .skills-container .skill i {
+        .skills-container .skill i, .projects-container .project-card img {
             font-size: 40px;
             color: #1E293B;
         }
 
-        .projects-container .project-card h3 {
-            margin-top: 10px;
+        .tech-stack span {
+            background-color: #E5E7EB;
+            padding: 8px 15px;
+            margin: 5px;
+            border-radius: 25px;
+            font-size: 0.9rem;
         }
 
+        /* Skill Bars */
+        .progress-container {
+            width: 100%;
+            height: 20px;
+            background-color: #E5E7EB;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+
+        .progress-bar {
+            height: 100%;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 20px;
+            color: white;
+        }
+
+        /* Contact Section */
         .contact {
             background: #e5e7eb;
             padding: 50px 20px;
@@ -138,6 +183,11 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff5722;
         }
 
         footer {
@@ -155,11 +205,40 @@
         }
 
         .social-icons i:hover {
-            color: #1E293B;
+            color: #ff5722;
         }
 
         .social-icons a {
             text-decoration: none;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            background-color: #f7fafc;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .testimonial-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            width: 100%;
+            max-width: 350px;
+            margin: 0 10px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .testimonial-card p {
+            font-style: italic;
+            color: #555;
+        }
+
+        .testimonial-card h4 {
+            margin-top: 15px;
+            font-weight: 600;
+            color: #1E293B;
         }
 
         /* Mobile responsive */
@@ -168,13 +247,28 @@
                 display: none;
                 flex-direction: column;
                 align-items: center;
-                gap: 15px;
             }
+
             .nav-links.active {
                 display: flex;
             }
+
             .hamburger {
                 display: block;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .skills-container, .projects-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact form {
+                display: flex;
+                flex-direction: column;
             }
         }
     </style>
@@ -197,13 +291,11 @@
     </header>
 
     <section id="hero" class="hero">
-        <div class="hero-content">
-            <h1>Welcome to My Portfolio</h1>
-            <p>I am Umer Farooq Bhat, a passionate .NET Developer & Data Analyst.</p>
-            <a href="Images/Umer_Bhat_Updated-Resume.pdf" download>
-                <button>Download CV</button>
-            </a>
-        </div>
+        <h1>Welcome to My Portfolio</h1>
+        <p>I am Umer Farooq Bhat, a passionate .NET Developer & Data Analyst.</p>
+        <a href="Images/Umer_Bhat_Updated-Resume.pdf" download>
+            <button>Download CV</button>
+        </a>
     </section>
 
     <section class="profile-container">
@@ -212,147 +304,76 @@
         <p>Experienced .NET Developer & Data Analyst with expertise in MVC, SQL, and data-driven solutions.</p>
     </section>
 
-    <section id="about" class="about">
+    <section id="about">
         <h2>About Me</h2>
         <p>I am a software developer with a focus on creating efficient and scalable applications. I love learning new technologies and collaborating with teams to solve complex problems.</p>
     </section>
 
-    <section id="skills" class="skills">
+    <section id="skills">
         <h2>Skills</h2>
         <div class="skills-container">
             <div class="skill">
-                <i class="fab fa-html5"></i>
-                <h3>HTML</h3>
-                <p>Proficient in creating responsive and structured web pages.</p>
-            </div>
-            <div class="skill">
-                <i class="fab fa-css3-alt"></i>
-                <h3>CSS</h3>
-                <p>Experienced in styling web pages with modern CSS techniques.</p>
-            </div>
-            <div class="skill">
-                <i class="fab fa-js"></i>
-                <h3>JavaScript</h3>
-                <p>Skilled in client-side scripting and dynamic web functionality.</p>
+                <i class="fas fa-cogs"></i>
+                <h3>.NET Development</h3>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 85%; background-color: #4CAF50;">85%</div>
+                </div>
             </div>
             <div class="skill">
                 <i class="fas fa-database"></i>
-                <h3>SQL</h3>
-                <p>Expert in working with relational databases and query optimization.</p>
-            </div>
-            <div class="skill">
-                <i class="fab fa-dot-net"></i>
-                <h3>.NET Framework</h3>
-                <p>Experienced in developing applications with MVC and C#.</p>
-            </div>
-            <div class="skill">
-                <i class="fab fa-react"></i>
-                <h3>React</h3>
-                <p>Building dynamic, responsive user interfaces with React.</p>
-            </div>
-            <div class="skill">
-                <i class="fas fa-cloud"></i>
-                <h3>Cloud Computing</h3>
-                <p>Experienced in cloud-based solutions (AWS, Azure).</p>
+                <h3>SQL Development</h3>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 90%; background-color: #2196F3;">90%</div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="experience" class="experience">
-        <h2>Experience</h2>
-        <div class="experience-item">
-            <h3>Imarticus Learning</h3>
-            <p><strong>Role:</strong> Data Analyst | <strong>Duration:</strong> June 2023 - Present</p>
-            <p>Worked on projects involving data analysis and business intelligence, helping clients derive actionable insights from large datasets.</p>
-        </div>
-        <div class="experience-item">
-            <h3>Société Générale</h3>
-            <p><strong>Role:</strong> .NET Developer | <strong>Duration:</strong> January 2022 - Present</p>
-            <p>Involved in developing and maintaining applications using .NET Framework, focusing on scalability and performance optimization.</p>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="project1.png" alt="Project 1">
+                <h3>Project Title 1</h3>
+                <p>Short description of the project goes here. This project involved .NET and SQL Server.</p>
+                <div class="tech-stack">
+                    <span>.NET</span><span>SQL</span>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="projects" class="projects">
-        <h2>My Projects</h2>
-        <div class="projects-container" id="projects-container">
-            <!-- Dynamic projects will be loaded here -->
+    <section id="testimonials" class="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonial-card">
+            <p>"Umer is a talented developer. His skills are top-notch, and his work is always completed on time."</p>
+            <h4>John Doe, Senior Developer</h4>
         </div>
     </section>
 
     <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <form id="contact-form" action="https://formsubmit.co/umerbhat283@gmail.com" method="POST">
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
-            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+        <h2>Contact</h2>
+        <form action="https://formspree.io/f/mlddrjdk" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
     </section>
 
-    <footer class="footer">
+    <footer>
+        <p>&copy; 2024 Umer Farooq Bhat. All rights reserved.</p>
         <div class="social-icons">
-            <a href="https://www.linkedin.com/in/umer-farooq-bhat" target="_blank">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/umer494" target="_blank">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="mailto:umerfarooq@example.com">
-                <i class="fas fa-envelope"></i>
-            </a>
-            <a href="https://twitter.com/umerfarooq" target="_blank">
-                <i class="fab fa-twitter"></i>
-            </a>
+            <a href="https://www.linkedin.com/in/umerfarooqbhat" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/umerfarooqbhat" target="_blank"><i class="fab fa-github"></i></a>
         </div>
-        <p>&copy; 2024 Umer Farooq Bhat. All Rights Reserved.</p>
     </footer>
 
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Projects Data
-            const projects = [
-                {
-                    title: "Portfolio Website",
-                    description: "A personal portfolio website built using HTML, CSS, and JavaScript.",
-                    image: "images/portfolio.jpg",
-                    link: "https://github.com/umer494/portfolio",
-                    tech: ["HTML", "CSS", "JavaScript"]
-                },
-                {
-                    title: "Weather App",
-                    description: "A weather application using React and an external API to fetch data.",
-                    image: "images/weather.jpg",
-                    link: "https://github.com/umer494/weather-app",
-                    tech: ["React", "API", "CSS"]
-                }
-            ];
-
-            // Function to render Projects
-            const renderProjects = () => {
-                const projectsContainer = document.getElementById('projects-container');
-                projects.forEach(project => {
-                    const projectCard = document.createElement('div');
-                    projectCard.classList.add('project-card');
-                    projectCard.innerHTML = `
-                        <img src="${project.image}" alt="${project.title}">
-                        <h3>${project.title}</h3>
-                        <p>${project.description}</p>
-                        <a href="${project.link}" target="_blank">View on GitHub</a>
-                        <div class="tech-stack">
-                            ${project.tech.map(tech => `<span class="tech">${tech}</span>`).join('')}
-                        </div>
-                    `;
-                    projectsContainer.appendChild(projectCard);
-                });
-            };
-
-            // Initialize Projects
-            renderProjects();
-        });
-
-        // Hamburger Menu for mobile
-        document.getElementById('hamburger').addEventListener('click', () => {
-            document.querySelector('.nav-links').classList.toggle('active');
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.querySelector(".nav-links");
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
         });
     </script>
 </body>
