@@ -1,4 +1,3 @@
-<html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +6,7 @@
     <title>Umer Farooq Bhat - Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Font Awesome link -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <style>
         /* Global styles */
         body {
@@ -16,11 +15,13 @@
             padding: 0;
             box-sizing: border-box;
             color: #333;
+            background-color: #f4f4f4;
         }
 
         h1, h2, h3 {
             margin: 0;
             font-weight: 700;
+            color: #333;
         }
 
         header {
@@ -48,6 +49,7 @@
         .nav-links a {
             color: white;
             text-decoration: none;
+            font-size: 1.1rem;
         }
 
         .hamburger {
@@ -56,13 +58,13 @@
         }
 
         .hero {
-            background: #f7fafc;
+            background: #e7f1f9;
             padding: 80px 20px;
             text-align: center;
         }
 
         .hero h1 {
-            font-size: 3rem;
+            font-size: 3.5rem;
         }
 
         .profile-container {
@@ -165,6 +167,8 @@
             .nav-links {
                 display: none;
                 flex-direction: column;
+                align-items: center;
+                gap: 15px;
             }
             .nav-links.active {
                 display: flex;
@@ -246,6 +250,11 @@
                 <h3>React</h3>
                 <p>Building dynamic, responsive user interfaces with React.</p>
             </div>
+            <div class="skill">
+                <i class="fas fa-cloud"></i>
+                <h3>Cloud Computing</h3>
+                <p>Experienced in cloud-based solutions (AWS, Azure).</p>
+            </div>
         </div>
     </section>
 
@@ -290,6 +299,9 @@
             </a>
             <a href="mailto:umerfarooq@example.com">
                 <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://twitter.com/umerfarooq" target="_blank">
+                <i class="fab fa-twitter"></i>
             </a>
         </div>
         <p>&copy; 2024 Umer Farooq Bhat. All Rights Reserved.</p>
