@@ -361,7 +361,7 @@
                 </div>
 
             <div class="skill">
-                <i class="fas fa-code"></i>
+                <i class="fa-brands fa-angular"></i>
                 <h3>Angular</h3>
                 <div class="progress-container">
                 <div class="progress-container">
@@ -390,15 +390,15 @@
         <h2>Experience</h2>
         <div class="experience-container">
             <div class="experience-card">
-                <h3>Software ENgineer</h3>
+                <h3>Software Engineer</h3>
                 <p>
-Société Générale Global Solutions Centre Pvt. Ltd. </br> Bangalore, Karnataka </br>
+Société Générale Global Solutions Centre Pvt. Ltd. <br> Bangalore, Karnataka <br>
 June 2022 – Present</p>
             </div>
             <div class="experience-card">
                 <h3>Software Analyst</h3>
                 <p>
-Imarticus Learning Private Limited </br> Bangalore, Karnataka </br>
+Imarticus Learning Private Limited <br> Bangalore, Karnataka <br>
 Feb 2022 – June 2022</p>
             </div>
         </div>
@@ -438,7 +438,8 @@ Feb 2022 – June 2022</p>
             <a href="https://www.linkedin.com/in/bhat-umer-farooq" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a href="https://twitter.com/umer" target="_blank"><i class="fab fa-twitter"></i></a>
             <a href="https://www.instagram.com/bhat_umer_farooq/?next=%2F" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="+917889662629"><i class="fas fa-phone"></i></a>
+            <a href="tel:+917889662629"><i class="fas fa-phone"></i></a>
+            <a href="https://twitter.com/umer" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
         </div>
         <p>&copy; 2024 Umer Farooq Bhat. All rights reserved.</p>
     </footer>
