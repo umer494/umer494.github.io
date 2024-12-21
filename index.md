@@ -275,6 +275,7 @@
             }
         }
     </style>
+
 </head>
 <body>
     <header>
@@ -367,10 +368,13 @@
         <textarea name="message" placeholder="Your Message" required></textarea>
         <button type="submit">Send Message</button>
     </form>
+
 </section>
 
     </section>
+
  <!-- Contact Section -->
+
     <section id="contact" class="contact">
         <div class="container">
             <h2>Contact Me</h2>
@@ -386,9 +390,12 @@
 
     <footer>
         <div class="social-icons">
+        <a href="mailto:umerbhat283@gmail.com"><i class="fas fa-envelope"></i> umerbhat283@gmail.com</a>
             <a href="https://github.com/umerfarooq" target="_blank"><i class="fab fa-github"></i></a>
             <a href="https://www.linkedin.com/in/umerfarooq" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a href="https://twitter.com/umerfarooq" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/bhat_umer_farooq" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="tel:+11234567890"><i class="fas fa-phone"></i> 7889662629</a>
         </div>
         <p>&copy; 2024 Umer Farooq Bhat. All rights reserved.</p>
     </footer>
@@ -398,5 +405,6 @@
             document.querySelector('.nav-links').classList.toggle('active');
         });
     </script>
+
 </body>
 </html>
