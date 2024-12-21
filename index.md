@@ -276,7 +276,7 @@
         }
       
 .experience-card {
-  background-color: #f4f4f4; /* Light gray background for the card */
+   background-color: #E5E7EB; /* white background for the card */
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -308,9 +308,9 @@
 
 /* Card hover effect */
 .experience-item:hover {
-  background-color: #ecf0f1; /* Light gray background on hover */
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #E5E7EB;/* Light gray background on hover */
+  transform: scale(1.05);
+ box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
     </style>
@@ -435,14 +435,7 @@
 MVC and SQL Server, automating the reporting process for financial institutions.
  Engineered Database Optimization: Designed and optimized SQL Server databases,
 improving query performance and ensuring data integrity for compliance purposes.
- Boosted Application Performance: Improved system performance through the
-implementation of efficient business logic and architectural enhancements.
- Led Proof of Concept (POC) for integrating FATCOM with SQL Database, showcasing
-system capabilities to key stakeholders.
- Windows Services Development: Created Windows services to automate background data
-processing tasks, increasing application efficiency.
- Ensured Regulatory Compliance: Engineered application components to meet global
-regulatory standards, offering clients a robust, compliant reporting platform.</p>
+</p>
   </div>
   <div class="experience-item">
     <h3 class="company-name">Imarticus Learning Pvt. Ltd</h3>
@@ -451,12 +444,7 @@ regulatory standards, offering clients a robust, compliant reporting platform.</
 applications, ensuring modular code organization.
  Developed User Interfaces: Designed responsive and user-friendly UIs using Angular,
 leading to a good improvement in user interaction and overall satisfaction.
- Database Integration & Optimization: Worked with the database team to optimize SQL
-Server data retrieval, reducing response time.
- Backend Development: Implemented backend business logic using MVC.NET, WPF
-and C#,ensuring secure and efficient data processing.
- Application Security: Integrated security protocols in backend systems to protect sensitive
-user data, complying with industry standards</p>
+</p>
   </div>
 </div>
 </section>
@@ -506,8 +494,6 @@ user data, complying with industry standards</p>
         document.getElementById('hamburger').addEventListener('click', function() {
             document.querySelector('.nav-links').classList.toggle('active');
         });
-
-
     </script>
 
 
