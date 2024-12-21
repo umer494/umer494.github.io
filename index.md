@@ -3,181 +3,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Umer Farooq Bhat, a Full Stack Software Developer specializing in modern web solutions.">
+    <meta name="description" content="Portfolio of Umer Farooq Bhat, Full Stack Developer">
     <meta name="keywords" content="Full Stack Developer, ASP.NET MVC, Angular, React, SQL Server">
     <meta name="author" content="Umer Farooq Bhat">
     <meta property="og:title" content="Portfolio - Umer Farooq Bhat">
-    <meta property="og:description" content="Portfolio of Umer Farooq Bhat, a Full Stack Software Developer specializing in modern web solutions.">
+    <meta property="og:description" content="Portfolio of Umer Farooq Bhat, Full Stack Developer">
     <meta property="og:image" content="Images/portfolio-preview.jpg">
     <meta property="og:url" content="https://umerbhatportfolio.com">
     <meta name="twitter:card" content="summary_large_image">
     <title>Portfolio - Umer Farooq Bhat</title>
+    
+    <!-- External Fonts and Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
     <style>
-        /* General Reset */
+        /* Global Styles */
         body {
             margin: 0;
             font-family: 'Poppins', sans-serif;
-            background: #0F172A;
+            background-color: #1E293B;
             color: #E2E8F0;
+            padding: 0;
         }
         a {
             text-decoration: none;
             color: inherit;
         }
-        ul {
-            list-style: none;
+        h1, h2, h3, p {
+            margin: 0;
             padding: 0;
         }
-
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+        
         /* Navbar */
-        .navbar {
+        nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 40px;
-            background: #1E293B;
-            position: sticky;
+            padding: 15px 20px;
+            background: #0F172A;
+            position: fixed;
             top: 0;
-            z-index: 1000;
+            left: 0;
+            right: 0;
+            z-index: 100;
         }
-        .navbar .logo {
+        nav .logo {
             font-size: 1.8rem;
-            font-weight: 700;
+            font-weight: bold;
             color: #38BDF8;
         }
-        .navbar .nav-links {
+        nav .nav-links {
             display: flex;
             gap: 20px;
         }
-        .navbar .nav-links a {
+        nav .nav-links a {
             color: #E2E8F0;
             font-weight: 500;
             transition: color 0.3s;
         }
-        .navbar .nav-links a:hover, .navbar .nav-links a:focus {
+        nav .nav-links a:hover {
             color: #38BDF8;
-            text-decoration: underline;
         }
 
         /* Hero Section */
         .hero {
             text-align: center;
-            padding: 100px 20px;
+            padding: 150px 0;
             background: linear-gradient(135deg, #1E293B, #0F172A);
-            position: relative;
+            color: #E2E8F0;
         }
         .hero h1 {
-            font-size: 3.5rem;
+            font-size: 4rem;
             color: #38BDF8;
+            margin-bottom: 20px;
         }
         .hero p {
             font-size: 1.5rem;
-            margin: 20px 0;
-            color: #94A3B8;
+            margin-bottom: 30px;
         }
         .btn-primary {
-            padding: 12px 25px;
+            padding: 15px 25px;
             background: #38BDF8;
             color: #0F172A;
             border: none;
             border-radius: 5px;
             font-weight: 500;
-            font-size: 1.1rem;
-            transition: background 0.3s, color 0.3s, border 0.3s;
+            font-size: 1.2rem;
+            transition: background 0.3s;
         }
         .btn-primary:hover {
             background: #0F172A;
             color: #38BDF8;
-            border: 2px solid #38BDF8;
-        }
-
-        /* Section Headings */
-        section h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            text-align: center;
-            color: #38BDF8;
         }
 
         /* About Section */
-        .about {
-            padding: 60px 40px;
-        }
-        .about p {
+        #about {
+            padding: 60px 0;
+            background-color: #1E293B;
             text-align: center;
+        }
+        #about h2 {
+            font-size: 2.5rem;
+            color: #38BDF8;
+            margin-bottom: 20px;
+        }
+        #about p {
             max-width: 800px;
-            margin: 0 auto;
+            margin: auto;
             font-size: 1.2rem;
+            color: #94A3B8;
             line-height: 1.6;
         }
 
         /* Skills Section */
-        .skills {
-            padding: 60px 40px;
+        #skills {
+            padding: 60px 0;
+            background-color: #0F172A;
+            text-align: center;
+        }
+        #skills h2 {
+            font-size: 2.5rem;
+            color: #38BDF8;
+            margin-bottom: 20px;
+        }
+        #skills ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+        #skills ul li {
             background: #1E293B;
-        }
-        .skills ul {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-        }
-        .skills ul li {
-            background: #0F172A;
-            padding: 15px 25px;
+            padding: 20px;
             border-radius: 8px;
-            font-weight: 500;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
+            color: #E2E8F0;
+            text-align: center;
             transition: transform 0.3s, box-shadow 0.3s;
         }
-        .skills ul li:hover {
+        #skills ul li:hover {
             transform: scale(1.05);
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
+        #skills ul li i {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #38BDF8;
+        }
 
         /* Gallery Section */
-        .gallery {
-            padding: 60px 40px;
+        #gallery {
+            padding: 60px 0;
+            text-align: center;
+        }
+        #gallery h2 {
+            font-size: 2.5rem;
+            color: #38BDF8;
+            margin-bottom: 20px;
         }
         .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
         }
-        .gallery img {
+        .gallery-grid img {
             width: 100%;
             border-radius: 10px;
             transition: transform 0.3s, box-shadow 0.3s;
         }
-        .gallery img:hover {
+        .gallery-grid img:hover {
             transform: scale(1.05);
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
-        .gallery .caption {
-            text-align: center;
-            color: #94A3B8;
-            margin-top: 5px;
-        }
 
         /* Contact Section */
-        .contact {
-            padding: 60px 40px;
-            background: #1E293B;
+        #contact {
+            padding: 60px 0;
+            background-color: #1E293B;
             text-align: center;
         }
-        .contact a {
+        #contact h2 {
+            font-size: 2.5rem;
             color: #38BDF8;
-            font-weight: 500;
-            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+        #contact p {
+            font-size: 1.2rem;
+            color: #94A3B8;
+        }
+        #contact a {
+            color: #38BDF8;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        #contact a:hover {
+            color: #E2E8F0;
         }
 
         /* Footer */
         footer {
-            text-align: center;
             padding: 20px;
             background: #0F172A;
+            text-align: center;
             color: #94A3B8;
         }
         footer a {
@@ -187,76 +221,87 @@
         footer a:hover {
             color: #E2E8F0;
         }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+            .btn-primary {
+                font-size: 1rem;
+            }
+            #skills ul {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
     </style>
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <nav class="navbar">
-            <h1 class="logo">Umer Farooq Bhat</h1>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+
+    <!-- Navbar -->
+    <nav>
+        <h1 class="logo">Umer Farooq Bhat</h1>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1>I'm a Full Stack Software Developer</h1>
-        <p>Crafting dynamic, responsive, and user-focused web solutions.</p>
+        <h1>Full Stack Software Developer</h1>
+        <p>Building innovative, scalable, and dynamic web applications</p>
         <a href="#projects" class="btn-primary">Previous Projects</a>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about">
         <h2>About Me</h2>
-        <p>I am a passionate software developer with over 3 years of experience in building modern web applications, focusing on creating user-friendly and scalable solutions using technologies like C#, MVC.NET, Angular, and SQL Server.</p>
+        <p>I am a passionate software developer with 3+ years of experience. I specialize in building full-stack web applications using ASP.NET MVC, Angular, and React. My goal is to create seamless and intuitive digital experiences for users worldwide.</p>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <section id="skills">
         <h2>Technical Skills</h2>
         <ul>
-            <li>Web Development: C#, ASP.NET MVC, Angular</li>
-            <li>Database: SQL Server, SSIS</li>
-            <li>Frontend: React, JavaScript</li>
-            <li>Programming: Python</li>
+            <li><i class="fab fa-react"></i> React</li>
+            <li><i class="fab fa-angular"></i> Angular</li>
+            <li><i class="fab fa-node-js"></i> Node.js</li>
+            <li><i class="fas fa-database"></i> SQL Server</li>
+            <li><i class="fab fa-html5"></i> HTML5</li>
+            <li><i class="fab fa-css3-alt"></i> CSS3</li>
+            <li><i class="fab fa-js"></i> JavaScript</li>
+            <li><i class="fas fa-cogs"></i> .NET MVC</li>
         </ul>
     </section>
 
     <!-- Gallery Section -->
-    <section id="gallery" class="gallery">
+    <section id="gallery">
         <h2>Gallery</h2>
         <div class="gallery-grid">
             <div>
                 <img src="Images/event1.jpg" alt="Event 1">
-                <div class="caption">CSR Event</div>
             </div>
             <div>
                 <img src="Images/event2.jpg" alt="Event 2">
-                <div class="caption">Team Building Activity</div>
             </div>
             <div>
                 <img src="Images/event3.jpg" alt="Event 3">
-                <div class="caption">Codeathon Participation</div>
             </div>
             <div>
                 <img src="Images/event4.jpg" alt="Event 4">
-                <div class="caption">Corporate Marathon</div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact">
         <h2>Contact Me</h2>
         <p>Email: <a href="mailto:umerbhat283@gmail.com">umerbhat283@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/umer494">github.com/umer494</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/umer494">linkedin.com/in/umer494</a></p>
-        <p><a href="#">Contact Form</a></p>
+        <p>GitHub: <a href="https://github.com/umer494" target="_blank">github.com/umer494</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/umer494" target="_blank">linkedin.com/in/umer494</a></p>
     </section>
 
     <!-- Footer -->
@@ -264,5 +309,6 @@
         <p>&copy; 2024 Umer Farooq Bhat | <a href="#">Privacy Policy</a></p>
         <p><a href="#">Back to Top</a></p>
     </footer>
+
 </body>
 </html>
