@@ -8,6 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollreveal/4.0.0/scrollreveal.min.js"></script>
     <style>
         /* Global styles */
         body {
@@ -367,6 +370,19 @@
 </section>
 
     </section>
+ <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:umerbhat283@gmail.com"><i class="fas fa-envelope"></i> umerbhat283@gmail.com</a></p>
+            <p>Phone: <a href="tel:+11234567890"><i class="fas fa-phone"></i> +1 (123) 456-7890</a></p>
+            <p>GitHub: <a href="https://github.com/umer494" target="_blank"><i class="fab fa-github"></i> github.com/umer494</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/bhat-umer-farooq" target="_blank"><i class="fab fa-linkedin"></i> linkedin.com/in/bhat-umer-farooq</a></p>
+            <p>Instagram: <a href="https://www.instagram.com/bhat_umer_farooq" target="_blank"><i class="fab fa-instagram"></i> instagram.com/bhat_umer_farooq</a></p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
 
     <footer>
         <div class="social-icons">
