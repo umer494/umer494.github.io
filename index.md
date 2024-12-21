@@ -314,7 +314,7 @@
     </section>
 
     <section id="skills">
-        <h2> Project Skills</h2>
+        <h2> Skills</h2>
         <div class="skills-container">
             <div class="skill">
                 <i class="fas fa-cogs"></i>
@@ -330,28 +330,39 @@
                     <div class="progress-bar" style="width: 80%; background-color: #2196F3;">80%</div>
                 </div>
             </div>
-            <div class="container">
-            <h2>Technical Skills</h2>
-            <div class="skills-list">
+            
+            
                 <div class="skill">
                     <i class="fas fa-code"></i>
                     <h4>Web Development</h4>
                     <p>C#, ASP.NET MVC, WebApi, Angular, TypeScript</p>
+                    <div class="progress-container">
+                    <div class="progress-bar" style="width: 80%; background-color: #2196F3;">80%</div>
+                </div>
                 </div>
                 <div class="skill">
                     <i class="fas fa-database"></i>
                     <h4>Database</h4>
                     <p>SQL Server, SSIS, MySQL</p>
+                   <div class="progress-container">
+                    <div class="progress-bar" style="width: 80%; background-color: #2196F3;">80%</div>
+                </div>
                 </div>
                 <div class="skill">
                     <i class="fas fa-tools"></i>
                     <h4>Tools & Technologies</h4>
                     <p>Visual Studio, Jenkins, Git, Docker</p>
+                    <div class="progress-container">
+                    <div class="progress-bar" style="width: 80%; background-color: #2196F3;">80%</div>
+                </div>
                 </div>
                 <div class="skill">
                     <i class="fas fa-laptop-code"></i>
                     <h4>Programming Languages</h4>
                     <p>Python, Node.js, JavaScript</p>
+                   <div class="progress-container">
+                    <div class="progress-bar" style="width: 80%; background-color: #2196F3;">80%</div>
+                </div>
                 </div>
             </div>
         </div>
@@ -360,14 +371,18 @@
                 <i class="fas fa-server"></i>
                 <h3>SSIS</h3>
                 <div class="progress-container">
-                    <div class="progress-bar" style="width: 80%; background-color: #2196F3;">90%</div>
+                    <div class="progress-container">
+                    <div class="progress-bar" style="width: 80%; background-color: #2196F3;">80%</div>
+                </div>
                 </div>
             </div>
             <div class="skill">
                 <i class="fas fa-code"></i>
                 <h3>Angular</h3>
                 <div class="progress-container">
-                    <div class="progress-bar" style="width: 40%; background-color: #FF5722;">70%</div>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 80%; background-color: #2196F3;">80%</div>
+                </div>
                 </div>
             </div>
         </div>
