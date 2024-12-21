@@ -390,15 +390,15 @@
         <h2>Experience</h2>
         <div class="experience-container">
             <div class="experience-card">
-                <h3>FATCOM</h3>
-                <p>Software Engineer
-Société Générale Global Solutions Centre Pvt. Ltd. – Bangalore, Karnataka
+                <h3>Software ENgineer</h3>
+                <p>
+Société Générale Global Solutions Centre Pvt. Ltd. </br> Bangalore, Karnataka </br>
 June 2022 – Present</p>
             </div>
             <div class="experience-card">
-                <h3>MIFID</h3>
-                <p>Software Analyst
-Imarticus Learning Private Limited – Bangalore, Karnataka
+                <h3>Software Analyst</h3>
+                <p>
+Imarticus Learning Private Limited </br> Bangalore, Karnataka </br>
 Feb 2022 – June 2022</p>
             </div>
         </div>
@@ -411,10 +411,10 @@ Feb 2022 – June 2022</p>
         <input type="text" name="name" placeholder="Enter Your Name" required>
         <input type="email" id="email" name="email" 
        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-       placeholder="example@example.com"
+       placeholder="YourEmail@example.com"
        title="Enter a valid email address (e.g., user@example.com)"
        required>
-        input type="tel" id="phone" name="phone"
+        <input type="tel" id="phone" name="phone"
        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
        placeholder="123-456-7890"
        title="Enter a valid phone number">
