@@ -9,7 +9,7 @@
     <link rel="icon" href="favicon.ico">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <style>
-        /* styles.css */
+        /* Global styles */
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
@@ -88,6 +88,7 @@
             display: flex;
             flex-wrap: wrap;
             gap: 30px;
+            justify-content: center;
         }
 
         .skill, .project-card {
@@ -98,9 +99,19 @@
             width: 100%;
             max-width: 250px;
             text-align: center;
+            transition: transform 0.3s ease-in-out;
         }
 
-        .skills-container .skill h3, .projects-container .project-card h3 {
+        .skill:hover, .project-card:hover {
+            transform: scale(1.05);
+        }
+
+        .skills-container .skill i {
+            font-size: 40px;
+            color: #1E293B;
+        }
+
+        .projects-container .project-card h3 {
             margin-top: 10px;
         }
 
@@ -138,12 +149,18 @@
             font-size: 24px;
             margin: 10px;
             color: #fff;
+            transition: color 0.3s ease;
         }
 
         .social-icons i:hover {
             color: #1E293B;
         }
 
+        .social-icons a {
+            text-decoration: none;
+        }
+
+        /* Mobile responsive */
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
@@ -199,17 +216,17 @@
         <h2>Skills</h2>
         <div class="skills-container">
             <div class="skill">
-                <i class="fas fa-code"></i>
+                <i class="fab fa-html5"></i>
                 <h3>HTML</h3>
                 <p>Proficient in creating responsive and structured web pages.</p>
             </div>
             <div class="skill">
-                <i class="fas fa-paint-brush"></i>
+                <i class="fab fa-css3-alt"></i>
                 <h3>CSS</h3>
                 <p>Experienced in styling web pages with modern CSS techniques.</p>
             </div>
             <div class="skill">
-                <i class="fas fa-cogs"></i>
+                <i class="fab fa-js"></i>
                 <h3>JavaScript</h3>
                 <p>Skilled in client-side scripting and dynamic web functionality.</p>
             </div>
@@ -219,7 +236,7 @@
                 <p>Expert in working with relational databases and query optimization.</p>
             </div>
             <div class="skill">
-                <i class="fas fa-server"></i>
+                <i class="fab fa-dot-net"></i>
                 <h3>.NET Framework</h3>
                 <p>Experienced in developing applications with MVC and C#.</p>
             </div>
