@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -183,7 +183,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="hamburger" id="hamburger">
@@ -272,10 +272,10 @@
 
     <section id="contact" class="contact">
         <h2>Contact Me</h2>
-        <form id="contact-form">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Your Email" required>
-            <textarea id="message" placeholder="Your Message" required></textarea>
+        <form id="contact-form" action="https://formsubmit.co/umerbhat283@gmail.com" method="POST">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
     </section>
