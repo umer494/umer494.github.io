@@ -7,7 +7,7 @@
     <title>Umer Farooq Bhat - Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Font Awesome link -->
     <style>
         /* Global styles */
         body {
@@ -174,7 +174,6 @@
             }
         }
     </style>
-
 </head>
 <body>
     <header>
@@ -197,9 +196,9 @@
         <div class="hero-content">
             <h1>Welcome to My Portfolio</h1>
             <p>I am Umer Farooq Bhat, a passionate .NET Developer & Data Analyst.</p>
-            <img src="Images/Umer_Bhat_Updated-Resume.pdf">
+            <a href="Images/Umer_Bhat_Updated-Resume.pdf" download>
                 <button>Download CV</button>
-
+            </a>
         </div>
     </section>
 
@@ -335,17 +334,14 @@
                 });
             };
 
-            // Handle Hamburger Menu
-            const hamburger = document.getElementById('hamburger');
-            const navLinks = document.querySelector('.nav-links');
-            hamburger.addEventListener('click', () => {
-                navLinks.classList.toggle('active');
-            });
-
-            // Render Projects
+            // Initialize Projects
             renderProjects();
         });
-    </script>
 
+        // Hamburger Menu for mobile
+        document.getElementById('hamburger').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
