@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -183,6 +183,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="hamburger" id="hamburger">
@@ -195,14 +196,14 @@
         <div class="hero-content">
             <h1>Welcome to My Portfolio</h1>
             <p>I am Umer Farooq Bhat, a passionate .NET Developer & Data Analyst.</p>
-            <a href="cv/Umer_Farooq_Bhat_CV.pdf" download>
+            <img src="Images/Umer_Bhat_Updated-Resume.pdf" alt="Profile Picture" class="profile-pic">
                 <button>Download CV</button>
             </a>
         </div>
     </section>
 
     <section class="profile-container">
-        <img src="images/profile.jpg" alt="Umer Farooq Bhat">
+        <img src="Images/Photograph.jpeg" alt="Umer Farooq Bhat">
         <h2>Umer Farooq Bhat</h2>
         <p>Experienced .NET Developer & Data Analyst with expertise in MVC, SQL, and data-driven solutions.</p>
     </section>
