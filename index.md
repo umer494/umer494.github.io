@@ -134,7 +134,7 @@
             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
         }
 
-        .skills-container .skill i, .projects-container .project-card img,.experience-container {
+        .skills-container .skill i, .projects-container .project-card img,.experience-container, experience-card img {
             font-size: 40px;
             color: #1E293B;
         }
@@ -216,13 +216,13 @@
         }
 
         /* Testimonials Section */
-        .testimonials,.experience-container {
+        .testimonials {
             background-color: #f7fafc;
             padding: 50px 20px;
             text-align: center;
         }
 
-        .testimonial-card,.experience-card {
+        .testimonial-card {
             background-color: white;
             padding: 30px;
             border-radius: 15px;
@@ -233,12 +233,12 @@
             text-align: center;
         }
 
-        .testimonial-card p,.experience-card p {
+        .testimonial-card p {
             font-style: italic;
             color: #555;
         }
 
-        .testimonial-card h4,.experience-card h3 {
+        .testimonial-card h4 {
             margin-top: 15px;
             font-weight: 600;
             color: #1E293B;
@@ -264,7 +264,7 @@
                 font-size: 2.5rem;
             }
 
-            .skills-container, .projects-container {
+            .skills-container, .projects-container, experience-container {
                 flex-direction: column;
                 align-items: center;
             }
@@ -443,12 +443,12 @@ Feb 2022 – June 2022</p>
         </div>
         <p>&copy; 2024 Umer Farooq Bhat. All rights reserved.</p>
     </footer>
-
+</body>
+</html>
     <script>
         document.getElementById('hamburger').addEventListener('click', function() {
             document.querySelector('.nav-links').classList.toggle('active');
         });
     </script>
 
-</body>
-</html>
+
