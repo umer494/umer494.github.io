@@ -326,6 +326,13 @@
                     <div class="progress-bar" style="width: 90%; background-color: #2196F3;">90%</div>
                 </div>
             </div>
+            <div class="skill">
+                <i class="fas fa-code"></i>
+                <h3>Angular</h3>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 70%; background-color: #FF5722;">70%</div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -333,47 +340,46 @@
         <h2>Projects</h2>
         <div class="projects-container">
             <div class="project-card">
-                <img src="project1.png" alt="Project 1">
-                <h3>Project Title 1</h3>
-                <p>Short description of the project goes here. This project involved .NET and SQL Server.</p>
-                <div class="tech-stack">
-                    <span>.NET</span><span>SQL</span>
-                </div>
+                <h3>Project 1</h3>
+                <p>Description of the project.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>Description of the project.</p>
             </div>
         </div>
     </section>
 
-    <section id="testimonials" class="testimonials">
-        <h2>Testimonials</h2>
-        <div class="testimonial-card">
-            <p>"Umer is a talented developer. His skills are top-notch, and his work is always completed on time."</p>
-            <h4>John Doe, Senior Developer</h4>
-        </div>
+    <section id="experience">
+        <h2>Experience</h2>
+        <p>Details about professional experience will go here.</p>
     </section>
 
     <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <form action="https://formspree.io/f/mlddrjdk" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+        <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/mlddrjdk" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
     </section>
 
     <footer>
-        <p>&copy; 2024 Umer Farooq Bhat. All rights reserved.</p>
         <div class="social-icons">
-            <a href="https://www.linkedin.com/in/umerfarooqbhat" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/umerfarooqbhat" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/umerfarooq" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/umerfarooq" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/umerfarooq" target="_blank"><i class="fab fa-twitter"></i></a>
         </div>
+        <p>&copy; 2024 Umer Farooq Bhat. All rights reserved.</p>
     </footer>
 
     <script>
-        const hamburger = document.getElementById("hamburger");
-        const navLinks = document.querySelector(".nav-links");
-        hamburger.addEventListener("click", () => {
-            navLinks.classList.toggle("active");
+        document.getElementById('hamburger').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
         });
     </script>
 </body>
