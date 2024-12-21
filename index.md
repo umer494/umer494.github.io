@@ -3,312 +3,329 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Umer Farooq Bhat, Full Stack Developer">
-    <meta name="keywords" content="Full Stack Developer, ASP.NET MVC, Angular, React, SQL Server">
-    <meta name="author" content="Umer Farooq Bhat">
-    <meta property="og:title" content="Portfolio - Umer Farooq Bhat">
-    <meta property="og:description" content="Portfolio of Umer Farooq Bhat, Full Stack Developer">
-    <meta property="og:image" content="Images/portfolio-preview.jpg">
-    <meta property="og:url" content="https://umerbhatportfolio.com">
-    <meta name="twitter:card" content="summary_large_image">
-    <title>Portfolio - Umer Farooq Bhat</title>
-    
-    <!-- External Fonts and Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Umer Farooq Bhat - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <style>
-        /* Global Styles */
+        /* styles.css */
         body {
-            margin: 0;
-            font-family: 'Poppins', sans-serif;
-            background-color: #1E293B;
-            color: #E2E8F0;
-            padding: 0;
-        }
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-        h1, h2, h3, p {
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+            color: #333;
         }
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: auto;
-            padding: 0 20px;
+
+        h1, h2, h3 {
+            margin: 0;
+            font-weight: 700;
         }
-        
-        /* Navbar */
-        nav {
+
+        header {
+            background: #1E293B;
+            padding: 20px 40px;
+            color: white;
+        }
+
+        .navbar {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 20px;
-            background: #0F172A;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 100;
         }
-        nav .logo {
-            font-size: 1.8rem;
-            font-weight: bold;
-            color: #38BDF8;
-        }
-        nav .nav-links {
+
+        .nav-links {
             display: flex;
             gap: 20px;
-        }
-        nav .nav-links a {
-            color: #E2E8F0;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-        nav .nav-links a:hover {
-            color: #38BDF8;
+            list-style-type: none;
         }
 
-        /* Hero Section */
+        .nav-links li {
+            padding: 10px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+        }
+
         .hero {
+            background: #f7fafc;
+            padding: 80px 20px;
             text-align: center;
-            padding: 150px 0;
-            background: linear-gradient(135deg, #1E293B, #0F172A);
-            color: #E2E8F0;
         }
+
         .hero h1 {
-            font-size: 4rem;
-            color: #38BDF8;
-            margin-bottom: 20px;
+            font-size: 3rem;
         }
-        .hero p {
-            font-size: 1.5rem;
-            margin-bottom: 30px;
+
+        .profile-container {
+            text-align: center;
+            margin-top: -60px;
         }
-        .btn-primary {
+
+        .profile-container img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        .profile-container h2 {
+            margin-top: 20px;
+        }
+
+        .profile-container p {
+            color: #555;
+        }
+
+        .skills-container, .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .skill, .project-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 250px;
+            text-align: center;
+        }
+
+        .skills-container .skill h3, .projects-container .project-card h3 {
+            margin-top: 10px;
+        }
+
+        .contact {
+            background: #e5e7eb;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
             padding: 15px 25px;
-            background: #38BDF8;
-            color: #0F172A;
+            background-color: #1E293B;
+            color: white;
             border: none;
             border-radius: 5px;
-            font-weight: 500;
-            font-size: 1.2rem;
-            transition: background 0.3s;
-        }
-        .btn-primary:hover {
-            background: #0F172A;
-            color: #38BDF8;
+            cursor: pointer;
         }
 
-        /* About Section */
-        #about {
-            padding: 60px 0;
-            background-color: #1E293B;
-            text-align: center;
-        }
-        #about h2 {
-            font-size: 2.5rem;
-            color: #38BDF8;
-            margin-bottom: 20px;
-        }
-        #about p {
-            max-width: 800px;
-            margin: auto;
-            font-size: 1.2rem;
-            color: #94A3B8;
-            line-height: 1.6;
-        }
-
-        /* Skills Section */
-        #skills {
-            padding: 60px 0;
-            background-color: #0F172A;
-            text-align: center;
-        }
-        #skills h2 {
-            font-size: 2.5rem;
-            color: #38BDF8;
-            margin-bottom: 20px;
-        }
-        #skills ul {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            justify-items: center;
-        }
-        #skills ul li {
-            background: #1E293B;
-            padding: 20px;
-            border-radius: 8px;
-            font-size: 1.2rem;
-            color: #E2E8F0;
-            text-align: center;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        #skills ul li:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-        #skills ul li i {
-            font-size: 2rem;
-            margin-bottom: 10px;
-            color: #38BDF8;
-        }
-
-        /* Gallery Section */
-        #gallery {
-            padding: 60px 0;
-            text-align: center;
-        }
-        #gallery h2 {
-            font-size: 2.5rem;
-            color: #38BDF8;
-            margin-bottom: 20px;
-        }
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-        .gallery-grid img {
-            width: 100%;
-            border-radius: 10px;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .gallery-grid img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Contact Section */
-        #contact {
-            padding: 60px 0;
-            background-color: #1E293B;
-            text-align: center;
-        }
-        #contact h2 {
-            font-size: 2.5rem;
-            color: #38BDF8;
-            margin-bottom: 20px;
-        }
-        #contact p {
-            font-size: 1.2rem;
-            color: #94A3B8;
-        }
-        #contact a {
-            color: #38BDF8;
-            font-size: 1.2rem;
-            transition: color 0.3s;
-        }
-        #contact a:hover {
-            color: #E2E8F0;
-        }
-
-        /* Footer */
         footer {
+            background-color: #1E293B;
+            color: white;
             padding: 20px;
-            background: #0F172A;
             text-align: center;
-            color: #94A3B8;
-        }
-        footer a {
-            color: #38BDF8;
-            transition: color 0.3s;
-        }
-        footer a:hover {
-            color: #E2E8F0;
         }
 
-        /* Responsive Design */
-        @media screen and (max-width: 768px) {
-            .hero h1 {
-                font-size: 3rem;
+        .social-icons i {
+            font-size: 24px;
+            margin: 10px;
+            color: #fff;
+        }
+
+        .social-icons i:hover {
+            color: #1E293B;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
             }
-            .btn-primary {
-                font-size: 1rem;
+            .nav-links.active {
+                display: flex;
             }
-            #skills ul {
-                grid-template-columns: 1fr 1fr;
+            .hamburger {
+                display: block;
             }
         }
     </style>
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Umer Farooq Bhat</h1>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
 
-    <!-- Navbar -->
-    <nav>
-        <h1 class="logo">Umer Farooq Bhat</h1>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Full Stack Software Developer</h1>
-        <p>Building innovative, scalable, and dynamic web applications</p>
-        <a href="#projects" class="btn-primary">Previous Projects</a>
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I am Umer Farooq Bhat, a passionate .NET Developer & Data Analyst.</p>
+            <a href="cv/Umer_Farooq_Bhat_CV.pdf" download>
+                <button>Download CV</button>
+            </a>
+        </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about">
+    <section class="profile-container">
+        <img src="images/profile.jpg" alt="Umer Farooq Bhat">
+        <h2>Umer Farooq Bhat</h2>
+        <p>Experienced .NET Developer & Data Analyst with expertise in MVC, SQL, and data-driven solutions.</p>
+    </section>
+
+    <section id="about" class="about">
         <h2>About Me</h2>
-        <p>I am a passionate software developer with 3+ years of experience. I specialize in building full-stack web applications using ASP.NET MVC, Angular, and React. My goal is to create seamless and intuitive digital experiences for users worldwide.</p>
+        <p>I am a software developer with a focus on creating efficient and scalable applications. I love learning new technologies and collaborating with teams to solve complex problems.</p>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <ul>
-            <li><i class="fab fa-react"></i> React</li>
-            <li><i class="fab fa-angular"></i> Angular</li>
-            <li><i class="fab fa-node-js"></i> Node.js</li>
-            <li><i class="fas fa-database"></i> SQL Server</li>
-            <li><i class="fab fa-html5"></i> HTML5</li>
-            <li><i class="fab fa-css3-alt"></i> CSS3</li>
-            <li><i class="fab fa-js"></i> JavaScript</li>
-            <li><i class="fas fa-cogs"></i> .NET MVC</li>
-        </ul>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <div class="gallery-grid">
-            <div>
-                <img src="Images/event1.jpg" alt="Event 1">
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <i class="fas fa-code"></i>
+                <h3>HTML</h3>
+                <p>Proficient in creating responsive and structured web pages.</p>
             </div>
-            <div>
-                <img src="Images/event2.jpg" alt="Event 2">
+            <div class="skill">
+                <i class="fas fa-paint-brush"></i>
+                <h3>CSS</h3>
+                <p>Experienced in styling web pages with modern CSS techniques.</p>
             </div>
-            <div>
-                <img src="Images/event3.jpg" alt="Event 3">
+            <div class="skill">
+                <i class="fas fa-cogs"></i>
+                <h3>JavaScript</h3>
+                <p>Skilled in client-side scripting and dynamic web functionality.</p>
             </div>
-            <div>
-                <img src="Images/event4.jpg" alt="Event 4">
+            <div class="skill">
+                <i class="fas fa-database"></i>
+                <h3>SQL</h3>
+                <p>Expert in working with relational databases and query optimization.</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-server"></i>
+                <h3>.NET Framework</h3>
+                <p>Experienced in developing applications with MVC and C#.</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-react"></i>
+                <h3>React</h3>
+                <p>Building dynamic, responsive user interfaces with React.</p>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:umerbhat283@gmail.com">umerbhat283@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/umer494" target="_blank">github.com/umer494</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/umer494" target="_blank">linkedin.com/in/umer494</a></p>
+    <section id="experience" class="experience">
+        <h2>Experience</h2>
+        <div class="experience-item">
+            <h3>Imarticus Learning</h3>
+            <p><strong>Role:</strong> Data Analyst | <strong>Duration:</strong> June 2023 - Present</p>
+            <p>Worked on projects involving data analysis and business intelligence, helping clients derive actionable insights from large datasets.</p>
+        </div>
+        <div class="experience-item">
+            <h3>Société Générale</h3>
+            <p><strong>Role:</strong> .NET Developer | <strong>Duration:</strong> January 2022 - Present</p>
+            <p>Involved in developing and maintaining applications using .NET Framework, focusing on scalability and performance optimization.</p>
+        </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Umer Farooq Bhat | <a href="#">Privacy Policy</a></p>
-        <p><a href="#">Back to Top</a></p>
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="projects-container" id="projects-container">
+            <!-- Dynamic projects will be loaded here -->
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/umer-farooq-bhat" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/umer494" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:umerfarooq@example.com">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+        <p>&copy; 2024 Umer Farooq Bhat. All Rights Reserved.</p>
     </footer>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Projects Data
+            const projects = [
+                {
+                    title: "Portfolio Website",
+                    description: "A personal portfolio website built using HTML, CSS, and JavaScript.",
+                    image: "images/portfolio.jpg",
+                    link: "https://github.com/umer494/portfolio",
+                    tech: ["HTML", "CSS", "JavaScript"]
+                },
+                {
+                    title: "Weather App",
+                    description: "A weather application using React and an external API to fetch data.",
+                    image: "images/weather.jpg",
+                    link: "https://github.com/umer494/weather-app",
+                    tech: ["React", "API", "CSS"]
+                }
+            ];
+
+            // Function to render Projects
+            const renderProjects = () => {
+                const projectsContainer = document.getElementById('projects-container');
+                projects.forEach(project => {
+                    const projectCard = document.createElement('div');
+                    projectCard.classList.add('project-card');
+                    projectCard.innerHTML = `
+                        <img src="${project.image}" alt="${project.title}">
+                        <h3>${project.title}</h3>
+                        <p>${project.description}</p>
+                        <a href="${project.link}" target="_blank">View on GitHub</a>
+                        <div class="tech-stack">
+                            ${project.tech.map(tech => `<span class="tech">${tech}</span>`).join('')}
+                        </div>
+                    `;
+                    projectsContainer.appendChild(projectCard);
+                });
+            };
+
+            // Handle Hamburger Menu
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.querySelector('.nav-links');
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+
+            // Render Projects
+            renderProjects();
+        });
+    </script>
 </body>
 </html>
