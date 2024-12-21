@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -174,6 +174,7 @@
             }
         }
     </style>
+
 </head>
 <body>
     <header>
@@ -196,9 +197,9 @@
         <div class="hero-content">
             <h1>Welcome to My Portfolio</h1>
             <p>I am Umer Farooq Bhat, a passionate .NET Developer & Data Analyst.</p>
-            <img src="Images/Umer_Bhat_Updated-Resume.pdf" alt="Profile Picture" class="profile-pic">
+            <img src="Images/Umer_Bhat_Updated-Resume.pdf">
                 <button>Download CV</button>
-            </a>
+
         </div>
     </section>
 
@@ -345,5 +346,6 @@
             renderProjects();
         });
     </script>
+
 </body>
 </html>
