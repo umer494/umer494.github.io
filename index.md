@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -216,13 +216,13 @@
         }
 
         /* Testimonials Section */
-        .testimonials {
+        .testimonials,.experience-container {
             background-color: #f7fafc;
             padding: 50px 20px;
             text-align: center;
         }
 
-        .testimonial-card {
+        .testimonial-card,.experience-card {
             background-color: white;
             padding: 30px;
             border-radius: 15px;
@@ -233,12 +233,12 @@
             text-align: center;
         }
 
-        .testimonial-card p {
+        .testimonial-card p,.experience-card p {
             font-style: italic;
             color: #555;
         }
 
-        .testimonial-card h4 {
+        .testimonial-card h4,.experience-card h3 {
             margin-top: 15px;
             font-weight: 600;
             color: #1E293B;
@@ -264,7 +264,7 @@
                 font-size: 2.5rem;
             }
 
-            .skills-container, .projects-container,.experience-container {
+            .skills-container, .projects-container {
                 flex-direction: column;
                 align-items: center;
             }
@@ -319,6 +319,7 @@
             <div class="skill">
                 <i class="fas fa-cogs"></i>
                 <h3>.NET Development</h3>
+                <p>C#, ASP.NET MVC, WebApi</p>
                 <div class="progress-container">
                     <div class="progress-bar" style="width: 70%; background-color: #4CAF50;">70%</div>
                 </div>
@@ -326,6 +327,7 @@
             <div class="skill">
                 <i class="fas fa-database"></i>
                 <h3>SQL Development</h3>
+                <p>SQL Server, SSIS, MySQL, UC4, SQL JOBS</p>
                 <div class="progress-container">
                     <div class="progress-bar" style="width: 80%; background-color: #2196F3;">80%</div>
                 </div>
@@ -334,24 +336,17 @@
             
                 <div class="skill">
                     <i class="fas fa-code"></i>
-                    <h4>Web Development</h4>
-                    <p>C#, ASP.NET MVC, WebApi, Angular, TypeScript</p>
+                    <h3>Web Development</h3>
+                    <p>Angular,TypeScript, HTML, CSS</p>
                     <div class="progress-container">
                     <div class="progress-bar" style="width: 80%; background-color: #2196F3;">80%</div>
                 </div>
                 </div>
-                <div class="skill">
-                    <i class="fas fa-database"></i>
-                    <h4>Database</h4>
-                    <p>SQL Server, SSIS, MySQL</p>
-                   <div class="progress-container">
-                    <div class="progress-bar" style="width: 80%; background-color: #2196F3;">80%</div>
-                </div>
-                </div>
+                
                 <div class="skill">
                     <i class="fas fa-tools"></i>
                     <h4>Tools & Technologies</h4>
-                    <p>Visual Studio, Jenkins, Git, Docker</p>
+                    <p>Visual Studio, Jenkins, Git, Oauth, IIS,TFS</p>
                     <div class="progress-container">
                     <div class="progress-bar" style="width: 80%; background-color: #2196F3;">80%</div>
                 </div>
@@ -359,23 +354,12 @@
                 <div class="skill">
                     <i class="fas fa-laptop-code"></i>
                     <h4>Programming Languages</h4>
-                    <p>Python, Node.js, JavaScript</p>
+                    <p>C#, Python, JavaScript, Typescript</p>
                    <div class="progress-container">
                     <div class="progress-bar" style="width: 80%; background-color: #2196F3;">80%</div>
                 </div>
                 </div>
-            </div>
-        </div>
 
-             <div class="skill">
-                <i class="fas fa-server"></i>
-                <h3>SSIS</h3>
-                <div class="progress-container">
-                    <div class="progress-container">
-                    <div class="progress-bar" style="width: 80%; background-color: #2196F3;">80%</div>
-                </div>
-                </div>
-            </div>
             <div class="skill">
                 <i class="fas fa-code"></i>
                 <h3>Angular</h3>
@@ -424,16 +408,23 @@ Feb 2022 – June 2022</p>
         <section id="contact" class="contact">
     <h2>Contact Me</h2>
     <form action="https://formspree.io/f/mlddrjdk" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <input type="number" name="number" placeholder="Your Number" required>
+        <input type="text" name="name" placeholder="Enter Your Name" required>
+        <input type="email" id="email" name="email" 
+       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+       placeholder="example@example.com"
+       title="Enter a valid email address (e.g., user@example.com)"
+       required>
+        input type="tel" id="phone" name="phone"
+       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+       placeholder="123-456-7890"
+       title="Enter a valid phone number">
         <textarea name="message" placeholder="Your Message" required></textarea>
         <button type="submit">Send Message</button>
     </form>
 
 </section>
 
-    </section>
+    
 
  <!-- Contact Section -->
 
@@ -443,10 +434,10 @@ Feb 2022 – June 2022</p>
     <footer>
         <div class="social-icons">
         <a href="mailto:umerbhat283@gmail.com"><i class="fas fa-envelope"></i></a>
-            <a href="https://github.com/umerfarooq" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/umerfarooq" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com/umerfarooq" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/bhat_umer_farooq" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/umer494" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/bhat-umer-farooq" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/umer" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/bhat_umer_farooq/?next=%2F" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="+917889662629"><i class="fas fa-phone"></i></a>
         </div>
         <p>&copy; 2024 Umer Farooq Bhat. All rights reserved.</p>
