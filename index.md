@@ -331,6 +331,27 @@
     font-size: 1.5rem;
     color: white;
 }
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-link {
+    text-decoration: none;
+    color: #1da1f2; /* Official Twitter/X blue color */
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-link i {
+    margin-right: 8px;
+}
+
+.social-link:hover {
+    color: #0d8bf2; /* Slightly darker shade on hover */
+}
+
 
 
     </style>
@@ -506,6 +527,9 @@ leading to a good improvement in user interaction and overall satisfaction.
             <a href="https://www.instagram.com/bhat_umer_farooq/?next=%2F" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="tel:+917889662629"><i class="fas fa-phone"></i></a>
             <a href="https://twitter.com/umer" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://x.com/yourusername" target="_blank" class="social-link">
+            <i class="fab fa-x-twitter"></i> X
+        </a>
         </div>
         <p>&copy; 2024 Umer Farooq Bhat. All rights reserved.</p>
     </footer>
