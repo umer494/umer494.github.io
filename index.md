@@ -489,11 +489,12 @@ leading to a good improvement in user interaction and overall satisfaction.
         <p>&copy; 2024 Umer Farooq Bhat. All rights reserved.</p>
     </footer>
 </body>
-</html>
     <script>
         document.getElementById('hamburger').addEventListener('click', function() {
             document.querySelector('.nav-links').classList.toggle('active');
         });
     </script>
+</html>
+
 
 
