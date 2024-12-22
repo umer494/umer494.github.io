@@ -526,7 +526,7 @@ leading to a good improvement in user interaction and overall satisfaction.
             <a href="https://twitter.com/umer" target="_blank"><i class="fab fa-twitter"></i></a>
             <a href="https://www.instagram.com/bhat_umer_farooq/?next=%2F" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="tel:+917889662629"><i class="fas fa-phone"></i></a>
-            <a href="https://twitter.com/umer" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://twitter.com/umer" target="_blank" class="social-link"><i class="fab fa-x-twitter"></i></a>
             <a href="https://x.com/yourusername" target="_blank" class="social-link">
             <i class="fab fa-x-twitter"></i> X
         </a>
