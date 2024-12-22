@@ -312,6 +312,26 @@
   transform: scale(1.05);
  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
+/* Navbar Profile Picture */
+.profile-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.logo {
+    margin: 0;
+    font-size: 1.5rem;
+    color: white;
+}
+
 
     </style>
 
@@ -319,7 +339,10 @@
 <body>
     <header>
         <nav class="navbar">
-            <h1 class="logo">Umer Farooq Bhat</h1>
+        <div class="profile-logo">
+            <img src="Images/Photograph.jpeg" alt="Profile Picture">
+            <h1 class="logo">Umer Farooq Bhat</h1>  
+        </div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -342,8 +365,6 @@
     </section>
 
     <section class="profile-container">
-        <img src="Images/Photograph.jpeg" alt="Umer Farooq Bhat">
-        <h2>Umer Farooq Bhat</h2>
         <p>Experienced .NET Developer & Data Analyst with expertise in MVC, SQL, and data-driven solutions.</p>
     </section>
 
