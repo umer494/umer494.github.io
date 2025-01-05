@@ -502,11 +502,11 @@ leading to a good improvement in user interaction and overall satisfaction.
        title="Enter a valid email address (e.g., user@example.com)"
        required>
         <input type="tel" id="phone" name="phone"
-       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-       placeholder="123-456-7890"
+       pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+       placeholder="1234567890"
        title="Enter a valid phone number">
         <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
+        <button type="submit">Hire Me</button>
     </form>
 
 </section>
@@ -526,10 +526,7 @@ leading to a good improvement in user interaction and overall satisfaction.
             <a href="https://twitter.com/umer" target="_blank"><i class="fab fa-twitter"></i></a>
             <a href="https://www.instagram.com/bhat_umer_farooq/?next=%2F" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="tel:+917889662629"><i class="fas fa-phone"></i></a>
-            <a href="https://twitter.com/umer" target="_blank" class="social-link"><i class="fab fa-x-twitter"></i></a>
-            <a href="https://x.com/yourusername" target="_blank" class="social-link">
-            <i class="fab fa-x-twitter"></i> X
-        </a>
+            <a href="https://x.com/UmerBha71460266?t=wTvymzLKDvfvCw3VSZ2OzQ&s=09" target="_blank" class="social-link"><i class="fab fa-x-twitter"></i></a>
         </div>
         <p>&copy; 2024 Umer Farooq Bhat. All rights reserved.</p>
     </footer>
