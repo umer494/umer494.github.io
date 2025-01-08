@@ -380,7 +380,7 @@
     <section id="hero" class="hero">
         <h1>Welcome to My Portfolio</h1>
         <p>I am Umer Farooq Bhat, a passionate Fullstak .NET Developer</p>
-        <a href="Images/Umer_Bhat_Updated-Resume.pdf" download>
+        <a href="Images/Bhat-Umer_farooq_Resume.pdf" download>
             <button>Download CV</button>
         </a>
     </section>
