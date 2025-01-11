@@ -378,7 +378,7 @@
     </header>
 
     <section id="hero" class="hero">
-        <h1>Welcome to My Portfolio</h1>
+        <h1>Welcome to My Umer Bhat's Portfolio</h1>
         <p>I am Umer Farooq Bhat, a passionate Fullstak .NET Developer</p>
         <a href="Images/Bhat-Umer_farooq_Resume.pdf" download>
             <button>Download CV</button>
@@ -386,7 +386,7 @@
     </section>
 
     <section class="profile-container">
-        <p>Experienced .NET Developer & Data Analyst with expertise in MVC, SQL, and data-driven solutions.</p>
+        <p>Experienced Fullstack .NET Developer & Data Analyst with expertise in MVC, SQL,Angular, SSIS and data-driven solutions.</p>
     </section>
 
     <section id="about">
